@@ -1,0 +1,1 @@
+This will contain my front-end implementation in REACTJS and Redux.

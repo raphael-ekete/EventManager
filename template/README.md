@@ -1,0 +1,1 @@
+This will contain the UI templates for the front-end in HTML/CSS.
