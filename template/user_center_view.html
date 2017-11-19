@@ -57,29 +57,29 @@
             </div>
             <div class="input-field col s12">
               <select>
-                <option value="" disabled selected>Capacity</option>
-                <option value="50">50 Seaters</option>
-                <option value="100">100 Seaters</option>
-                <option value="200">200 Seaters</option>
-                <option value="500">500 Seaters</option>
-                <option value="1000">1000 Seaters</option>
-                <option value="2000">2000 Seaters</option>
-                <option value="5000">5000 Seaters</option>
-                <option value="10000">10000 Seaters</option>
+                <option value="" disabled selected> Sitting capacity</option>
+                <option value="1">50 - 100</option>
+                <option value="2">100 - 200</option>
+                <option value="3">200 - 500</option>
+                <option value="4">500 - 1000</option>
+                <option value="5">1000 - 2000</option>
+                <option value="6">2000 - 5000</option>
+                <option value="7">5000 - 10000</option>
+                <option value="8">10000 and above</option>
               </select>
             </div>
             <div class="input-field col s12">
               <select>
-                <option value="" disabled selected>Packing Space</option>
-                <option value="10">10 Cars</option>
-                <option value="20">20 Cars</option>
-                <option value="50">50 Cars</option>
-                <option value="100">100 Cars</option>
-                <option value="200">200 Cars</option>
-                <option value="500">500 Cars</option>
+                <option value="" disabled selected>Car packing space</option>
+                <option value="10">less than 10</option>
+                <option value="20">20 to 50</option>
+                <option value="50">50 to 100</option>
+                <option value="100">100 to 200</option>
+                <option value="200">200 to 500</option>
+                <option value="500">500 and above</option>
               </select>
             </div>
-              <p id="p01"><ins>Other Criteria</ins></p>
+            <p id="p01"><ins>Other Criteria</ins></p>
             <div class="input-field col s12">
               <select>
                 <option value="" disabled selected>Price</option>
@@ -134,10 +134,10 @@
             <p id="medium-text-black"><span>Name: </span></p>
             <p id="medium-text-black"><span>Location: </span></p>
             <p id="medium-text-black"><span>Price: </span></p>
-            <p id="medium-text-black"><span>Capacity: </span></p>
-            <p id="medium-text-black"><span>Number of Projectors: </span></p>
-            <p id="medium-text-black"><span>Packing Space: </span></p>
-            <p id="medium-text-black"><span>Nature of Center: </span></p>
+            <p id="medium-text-black"><span>Sitting capacity: </span></p>
+            <p id="medium-text-black"><span>Projector availability: </span></p>
+            <p id="medium-text-black"><span>Car packing space: </span></p>
+            <p id="medium-text-black"><span>Nature of center: </span></p>
             <p id="medium-text-black"><span>Security: </span></p>
           </div>
           <div class="col s4">
@@ -163,7 +163,7 @@
                       <input type="text" class="datepicker">
                     </div>
                   </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Add/Modify Event
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Save
                       <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -181,16 +181,17 @@
               <h5 class="center" id="medium-text"><b>My Events</b></h5>
             </div>
              <!-- populate from database -->
-              <ul class="collection">
-                <li class="collection-item avatar">
-                  <a href="#page-link"><img src="image-link" alt="image" class="circle"></a>
-                  <p id="p03">Name: </p>
-                  <p id="p03">Location: </p>
-                  <p id="p03">Date booked: </p>
-                </li>
-              </ul>
-              <div class="col s4"></div>
-              <a class="waves-effect waves-light btn">Delete</a>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <a href="#page-link"><img src="image-link" alt="image" class="circle"></a>
+                <p id="p03">Name: </p>
+                <p id="p03">Location: </p>
+                <p id="p03">Date booked: </p>
+                <div class="col s4"></div>
+                <a class="waves-effect waves-light btn">Delete</a>
+                <div class="col s12"></div>
+              </li>
+            </ul>
           </form>
         </div>
 
