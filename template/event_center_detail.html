@@ -118,28 +118,63 @@
 
       <!-- center section -->
 
-      <div class="col s8 white myfullhigh">
+      <div class="col s7 white myfullhigh">
         <div class="row">
           <div class="slider">
             <ul class="slides">
-              <li><img src="image-link"> <!-- image from database --></li>
-              <li><img src="image-link"> <!-- image from database --></li>
-              <li><img src="image-link"> <!-- image from database --></li>
+              <li><img src="image-link" alt="image"> <!-- image from database --></li>
+              <li><img src="image-link" alt="image"> <!-- image from database --></li>
+              <li><img src="image-link" alt="image"> <!-- image from database --></li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col s12">
+          <div class="col s7">
             <h5><b>Center details</b></h5>
             <p id="medium-text-black"><span>Name: </span></p>
             <p id="medium-text-black"><span>Location: </span></p>
             <p id="medium-text-black"><span>Price: </span></p>
+            <p id="medium-text-black"><span>Capacity: </span></p>
+            <p id="medium-text-black"><span>Number of Projectors: </span></p>
+            <p id="medium-text-black"><span>Packing Space: </span></p>
+            <p id="medium-text-black"><span>Nature of Center: </span></p>
+            <p id="medium-text-black"><span>Security: </span></p>
+          </div>
+          <div class="col s5">
+            <div class="col s12">
+              <ul class="collection with-header">
+                <li class="collection-header"><h6><b>Dates booked</b></h6></li>
+                <li class="collection-item">11/19/2017</li> <!-- populate from database -->
+              </ul>
+            </div>
+            <div class="row">
+              <form class="col s11 offset-s1">
+                <h6><b><ins>Book an event at this center</ins></b></h6>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Event name</label>
+                  </div>
+                  <div>
+                    <div class="col s3">
+                      <p><b>Date: </b></p>
+                    </div>
+                    <div class="col s9">
+                      <input type="text" class="datepicker">
+                    </div>
+                  </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Add/Modify Event
+                      <i class="material-icons right">send</i>
+                    </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- right side column -->
-      <div class="col s2 teal myfullhigh">
+      <div class="col s3 teal myfullhigh">
         <div class="row">
           <form class="col s12 white">
             <div class="card-panel teal">
@@ -148,12 +183,13 @@
              <!-- populate from database -->
               <ul class="collection">
                 <li class="collection-item avatar">
-                  <a href="page-link"><img src="image-link" alt="" class="circle"></a>
-                  <p id="p02">Name of center<br>Location<br>Date booked</p>
-
+                  <a href="#page-link"><img src="image-link" alt="image" class="circle"></a>
+                  <p id="p03">Name: </p>
+                  <p id="p03">Location: </p>
+                  <p id="p03">Date booked: </p>
                 </li>
-
               </ul>
+              <a class="waves-effect waves-light btn">Delete</a>
           </form>
         </div>
 
