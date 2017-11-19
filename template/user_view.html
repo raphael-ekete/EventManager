@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="uistyles.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Event Centers - Event Manager</title>
+
+    <!-- inline style -->
+  </head>
+
+  <body>
+
+    <!-- navigation bar -->
+    <nav>
+    <div class="nav-wrapper teal">
+      <a href="index.html" class="brand-logo">Event Manager</a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">#Username</a></li>
+      </ul>
+      <form class="right hide-on-med-and-down">
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+    </nav>
+
+    <!-- Page Layout here -->
+
+    <div class="row">
+
+      <!-- left side column -->
+
+      <div class="col s2 teal myfull-width">
+        <div class="row">
+          <form class="col s12 white">
+            <div class="card-panel teal">
+              <h5 class="center" id="big-text"><b>Filter List of Centers</b></h5>
+            </div>
+              <p id="p01"><ins>Facilities</ins></p>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Projector</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Capacity</option>
+                <option value="50">50 Seaters</option>
+                <option value="100">100 Seaters</option>
+                <option value="200">200 Seaters</option>
+                <option value="500">500 Seaters</option>
+                <option value="1000">1000 Seaters</option>
+                <option value="2000">2000 Seaters</option>
+                <option value="5000">5000 Seaters</option>
+                <option value="10000">10000 Seaters</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Packing Space</option>
+                <option value="10">10 Cars</option>
+                <option value="20">20 Cars</option>
+                <option value="50">50 Cars</option>
+                <option value="100">100 Cars</option>
+                <option value="200">200 Cars</option>
+                <option value="500">500 Cars</option>
+              </select>
+            </div>
+              <p id="p01"><ins>Other Criteria</ins></p>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Price</option>
+                <option value="1">N50k - N100k</option>
+                <option value="2">N100k - N200k</option>
+                <option value="3">N200k - N500k</option>
+                <option value="4">N500k - N1m</option>
+                <option value="5">N1m - N2m</option>
+                <option value="6">N2m - N5m</option>
+                <option value="7">N5m - N10m</option>
+                <option value="8">N10m - N20m</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Nature of Center</option>
+                <option value="open">Open space</option>
+                <option value="closed">Enclosed space</option>
+              </select>
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Security</option>
+                <option value="Yes">Security available</option>
+                <option value="No">No security</option>
+              </select>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Filter
+              <i class="material-icons right">send</i>
+            </button>
+            <div class="row"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- center section -->
+
+      <div class="col s8 white myfull-width">
+
+        <div class="row">
+          <div class="col s6 m4 l3">
+            <!-- populate card from database -->
+            <div class="card">
+              <div class="card-image">
+                <a href="page-link"><img src="image-link" alt=""></a>
+              </div>
+              <div class="card-content">
+                <a href="page-link"><p class="black-text center-align">Name of center<br>Price<br>Location<br>Capacity</p></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+
+      <!-- right side column -->
+      <div class="col s2 teal myfull-width">
+        <div class="row">
+          <form class="col s12 white">
+            <div class="card-panel teal">
+              <h5 class="center" id="medium-text"><b>My Events</b></h5>
+            </div>
+             <!-- populate from database -->
+              <ul class="collection">
+                <li class="collection-item avatar">
+                  <a href="page-link"><img src="image-link" alt="" class="circle"></a>
+                  <p id="p02">Name of center<br>Location<br>Date booked</p>
+
+                </li>
+
+              </ul>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer white">
+      <div class="container black-text">
+      © 2017 --- Raphael Ekete --- raphael.ekete@gmail.com ---
+      </div>
+      <div class="row"></div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="uiscript.js"></script>
+  </body>
+</html>

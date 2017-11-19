@@ -1,0 +1,18 @@
+.myfull-width {
+    height: 100%;
+    min-height: 1000px !important;
+}
+#p01 {
+	font-size: 135%;
+}
+#big-text {
+	font-size: 150%;
+	color: white;
+}
+#medium-text {
+	font-size: 120%;
+	color: white;
+}
+#p02 {
+	font-size: 70%
+}
