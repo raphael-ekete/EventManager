@@ -1,4 +1,4 @@
-.myfull-width {
+.myfullhigh {
     height: 100%;
     min-height: 1000px !important;
 }
@@ -14,5 +14,23 @@
 	color: white;
 }
 #p02 {
-	font-size: 70%
+	font-size: 70%;
+}
+#p03 {
+	font-size: 90%;
+}
+#myfull-h {
+	height: 200%;
+}
+#big-text-black {
+	font-size: 150%;
+	color: black;
+}
+#medium-text-black {
+	font-size: 120%;
+	color: black;
+} 
+#small-text-black {
+	font-size: 100%;
+	color: black;
 }
