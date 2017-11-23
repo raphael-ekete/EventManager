@@ -1,13 +1,13 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1",
   "description": "Event manager back-end",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon --exec npm run babel-node -- ./bin/www",
+    "babel": "babel --presets es2015 app.js -o app.bundle.js"
+    "start": "nodemon --exec npm run babel-node -- app",
     "test": "mocha --compilers js:babel-register --recursive ./test/",
-    "mocha": "mocha --compilers js:babel-register",
-    "build": "babel -d dist"
+    "mocha": "mocha --compilers js:babel-register"
   },
   "author": "Raphael Ekete",
   "license": "ISC",
@@ -15,11 +15,6 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "morgan": "^1.9.0"
-  },
-  "babel": {
-    "presets": [
-      "latest"
-    ]
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
